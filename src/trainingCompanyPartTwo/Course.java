@@ -1,13 +1,13 @@
 package trainingCompanyPartTwo;
 
-public class GroupOfStudents2 {
+public class Course {
     private Teacher teacher;
     private Student student;
     private int classesCount;
     private int limitOfStudents;
     private String course;
 
-    public GroupOfStudents2(Teacher teacher, Student student, int classesCount, int limitOfStudents, String course) {
+    public Course(Teacher teacher, Student student, int classesCount, int limitOfStudents, String course) {
         this.teacher = teacher;
         this.student = student;
         this.classesCount = classesCount;
@@ -15,7 +15,7 @@ public class GroupOfStudents2 {
         this.course = course;
     }
 
-    public void showGroup(){
+    public void showCourse(){
         teacher.show();
         student.show();
         System.out.println("liczba zajec: " + classesCount + " limit  uczestnikow: " + limitOfStudents);

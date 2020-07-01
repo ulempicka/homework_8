@@ -7,8 +7,8 @@ public class TestGroup {
         Grades grades1 = new Grades(teacher1,student1,10,12, "Excel", 3.5);
         Grades grades2 = new Grades(teacher1,student1,7,10, "SQL", 4);
 
-        grades1.showGroup();
-        grades2.showGroup();
+        grades1.showCourse();
+        grades2.showCourse();
 
     }
 }

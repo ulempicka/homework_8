@@ -1,6 +1,6 @@
 package trainingCompanyPartTwo;
 
-public class Grades extends GroupOfStudents2 {
+public class Grades extends Course {
     private double grade;
 
     public Grades(Teacher teacher, Student student, int classesCount, int limitOfStudents, String course, double grade) {
@@ -9,8 +9,8 @@ public class Grades extends GroupOfStudents2 {
     }
 
     @Override
-    public void showGroup(){
-        super.showGroup();
+    public void showCourse(){
+        super.showCourse();
         System.out.println("ocena: " + grade);
     }
 
