@@ -1,6 +1,6 @@
 package trainingCompanyPartTwo;
 
-public class TestGroup {
+public class TestGrades {
     public static void main(String[] args) {
         Teacher teacher1 = new Teacher("Stanislaw", "Rumin", 6812343, "IT", 15);
         Student student1 = new Student("Anna", "Kowal", 881255,2500, true);
