@@ -25,4 +25,8 @@ public class Student extends Person {
                 ", credit=" + credit +
                 '}';
     }
+
+    public static int getStudentsCount() {
+        return studentsCount;
+    }
 }

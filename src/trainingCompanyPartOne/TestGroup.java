@@ -6,7 +6,7 @@ public class TestGroup {
         Student student1 = new Student("Anna", "Kowal", 881255,2500, true);
         Student student2 = new Student("Piotr", "Nowak", 90321233, 2000, false);
         Student[] students = {student1, student2};
-        GroupOfStudents1 groupOfStudents = new GroupOfStudents1(teacher,students,10,12);
+        GroupOfStudents groupOfStudents = new GroupOfStudents(teacher,students,10,12);
 
         groupOfStudents.showGroup();
 

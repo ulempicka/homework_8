@@ -1,17 +1,21 @@
 package trainingCompanyPartTwo;
 
-public class Grades extends Course {
-    private double grade;
+import java.util.Arrays;
 
-    public Grades(Teacher teacher, Student student, int classesCount, int limitOfStudents, String course, double grade) {
-        super(teacher,student,classesCount,limitOfStudents,course);
-        this.grade = grade;
+public class Grades {
+    private double[] grades;
+    GroupOfStudents[] group;
+
+    public Grades(double[] grades, GroupOfStudents[] group) {       //grades[][]???
+        this.grades = grades;
+        this.group = group;
     }
 
-    @Override
-    public void showCourse(){
-        super.showCourse();
-        System.out.println("ocena: " + grade);
+    void showGrades(){
+        for (int i = 0; i < group.length; i++) {
+            System.out.println("+++++++++++++++++++++++++++++++++++++++KURS+++++++++++++++++++++++++++++++++++++++++++++++++++");
+            group[i].showGroup();
+            System.out.println("Ocena z kursu: " + grades[i]);
+        }
     }
-
 }
