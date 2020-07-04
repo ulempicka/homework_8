@@ -6,8 +6,8 @@ public class TestGrades {
         Student student1 = new Student("Anna", "Kowal", 881255,2500, true);
         Group group1 = new Group(teacher1, 10, 12, "Excel");
         Group group2 = new Group(teacher1,7,10, "SQL");
-        Grades grades1 = new Grades(3.5, group1,student1);
-        Grades grades2 = new Grades(4.5, group2,student1);
+        Grades grades1 = new Grades(student1, group1, 3.5);
+        Grades grades2 = new Grades(student1, group2, 4.5);
         grades1.showGrades();
         grades2.showGrades();
     }

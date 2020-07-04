@@ -1,14 +1,14 @@
 package trainingCompanyPartTwo;
 
 public class Grades {
-    private double grade;
-    Group group;
     Student student;
+    Group group;
+    private double grade;
 
-    public Grades(double grade, Group group, Student student) {
-        this.grade = grade;
-        this.group = group;
+    public Grades(Student student, Group group, double grade) {
         this.student = student;
+        this.group = group;
+        this.grade = grade;
     }
 
     void showGrades() {
