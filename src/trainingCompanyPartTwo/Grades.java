@@ -1,21 +1,20 @@
 package trainingCompanyPartTwo;
 
-import java.util.Arrays;
-
 public class Grades {
-    private double[] grades;
-    GroupOfStudents[] group;
+    private double grade;
+    Group group;
+    Student student;
 
-    public Grades(double[] grades, GroupOfStudents[] group) {       //grades[][]???
-        this.grades = grades;
+    public Grades(double grade, Group group, Student student) {
+        this.grade = grade;
         this.group = group;
+        this.student = student;
     }
 
-    void showGrades(){
-        for (int i = 0; i < group.length; i++) {
-            System.out.println("+++++++++++++++++++++++++++++++++++++++KURS+++++++++++++++++++++++++++++++++++++++++++++++++++");
-            group[i].showGroup();
-            System.out.println("Ocena z kursu: " + grades[i]);
-        }
+    void showGrades() {
+        System.out.println("+++++++++++++++++++++++++++++++++++++++KURS+++++++++++++++++++++++++++++++++++++++++++++++++++");
+        group.showGroup();
+        student.show();
+        System.out.println("Ocena z kursu: " + grade);
     }
 }
